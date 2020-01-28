@@ -36,13 +36,13 @@ endif
 let colors_name = "apprentice"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
-  hi Normal           ctermbg=NONE ctermfg=250  guibg=#262626 guifg=#bcbcbc cterm=NONE           gui=NONE
-  hi Terminal         ctermbg=NONE ctermfg=250  guibg=#262626 guifg=#bcbcbc cterm=NONE           gui=NONE
-  hi LineNr           ctermbg=NONE ctermfg=242  guibg=#1c1c1c guifg=#6c6c6c cterm=NONE           gui=NONE
-  hi FoldColumn       ctermbg=NONE ctermfg=242  guibg=#1c1c1c guifg=#6c6c6c cterm=NONE           gui=NONE
-  hi Folded           ctermbg=NONE ctermfg=242  guibg=#1c1c1c guifg=#6c6c6c cterm=NONE           gui=NONE
-  hi MatchParen       ctermbg=NONE ctermfg=229  guibg=#1c1c1c guifg=#ffffaf cterm=NONE           gui=NONE
-  hi signColumn       ctermbg=NONE ctermfg=242  guibg=#1c1c1c guifg=#6c6c6c cterm=NONE           gui=NONE
+  hi Normal           ctermbg=NONE ctermfg=250  guibg=#000000 guifg=#bcbcbc cterm=NONE           gui=NONE
+  hi Terminal         ctermbg=NONE ctermfg=250  guibg=NONE    guifg=#bcbcbc cterm=NONE           gui=NONE
+  hi LineNr           ctermbg=NONE ctermfg=242  guibg=NONE    guifg=#6c6c6c cterm=NONE           gui=NONE
+  hi FoldColumn       ctermbg=NONE ctermfg=242  guibg=NONE    guifg=#6c6c6c cterm=NONE           gui=NONE
+  hi Folded           ctermbg=NONE ctermfg=242  guibg=NONE    guifg=#6c6c6c cterm=NONE           gui=NONE
+  hi MatchParen       ctermbg=NONE ctermfg=229  guibg=NONE    guifg=#ffffaf cterm=NONE           gui=NONE
+  hi signColumn       ctermbg=NONE ctermfg=242  guibg=NONE    guifg=#6c6c6c cterm=NONE           gui=NONE
 
   set background=dark
 
@@ -67,8 +67,8 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
   hi PmenuSel         ctermbg=66   ctermfg=235  guibg=#5f8787 guifg=#262626 cterm=NONE           gui=NONE
   hi PmenuThumb       ctermbg=66   ctermfg=66   guibg=#5f8787 guifg=#5f8787 cterm=NONE           gui=NONE
 
-  hi ErrorMsg         ctermbg=131  ctermfg=235  guibg=#af5f5f guifg=#262626 cterm=NONE           gui=NONE
-  hi ModeMsg          ctermbg=NONE ctermfg=110  guibg=#87af87 guifg=#262626 cterm=NONE           gui=NONE
+  hi ErrorMsg         ctermbg=131  ctermfg=245  guibg=#af5f5f guifg=#262626 cterm=NONE           gui=NONE
+  hi ModeMsg          ctermbg=NONE ctermfg=110  guibg=NONE    guifg=#87afd7 cterm=NONE           gui=NONE
   hi MoreMsg          ctermbg=NONE ctermfg=66   guibg=NONE    guifg=#5f8787 cterm=NONE           gui=NONE
   hi Question         ctermbg=NONE ctermfg=108  guibg=NONE    guifg=#87af87 cterm=NONE           gui=NONE
   hi WarningMsg       ctermbg=NONE ctermfg=131  guibg=NONE    guifg=#af5f5f cterm=NONE           gui=NONE
@@ -91,7 +91,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
   hi StatusLineTerm   ctermbg=101  ctermfg=235  guibg=#87875f guifg=#262626 cterm=NONE           gui=NONE
   hi StatusLineTermNC ctermbg=238  ctermfg=101  guibg=#444444 guifg=#87875f cterm=NONE           gui=NONE
 
-  hi Visual           ctermbg=235  ctermfg=110  guibg=#262626 guifg=#8fafd7 cterm=reverse        gui=reverse
+  hi Visual           ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE    cterm=reverse        gui=reverse
   hi VisualNOS        ctermbg=NONE ctermfg=NONE guibg=NONE    guifg=NONE    cterm=underline      gui=underline
 
   hi VertSplit        ctermbg=238  ctermfg=238  guibg=#444444 guifg=#444444 cterm=NONE           gui=NONE
@@ -126,7 +126,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi SpellRare      ctermbg=NONE ctermfg=208  guibg=NONE    guifg=#ff8700 cterm=undercurl      gui=undercurl guisp=NONE
   endif
 
-  hi ColorColumn      ctermbg=234  ctermfg=NONE guibg=#1c1c1c guifg=NONE    cterm=NONE           gui=NONE
+  hi ColorColumn      ctermbg=NONE  ctermfg=NONE guibg=NONE guifg=NONE    cterm=NONE           gui=NONE
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
   set t_Co=16
 
