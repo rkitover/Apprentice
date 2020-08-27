@@ -36,7 +36,7 @@ endif
 let colors_name = "apprentice"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
-  hi Normal           ctermbg=NONE ctermfg=250  guibg=#000000 guifg=#bcbcbc cterm=NONE           gui=NONE
+  hi Normal           ctermbg=NONE ctermfg=250  guibg=NONE    guifg=#bcbcbc cterm=NONE           gui=NONE
   hi Terminal         ctermbg=NONE ctermfg=250  guibg=NONE    guifg=#bcbcbc cterm=NONE           gui=NONE
   hi LineNr           ctermbg=NONE ctermfg=242  guibg=NONE    guifg=#6c6c6c cterm=NONE           gui=NONE
   hi FoldColumn       ctermbg=NONE ctermfg=242  guibg=NONE    guifg=#6c6c6c cterm=NONE           gui=NONE
